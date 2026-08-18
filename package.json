@@ -1,0 +1,11 @@
+{
+  "name": "mova-app",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "test": "node --test backend/test/*.test.js"
+  }
+}
