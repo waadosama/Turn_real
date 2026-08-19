@@ -1,13 +1,12 @@
-# Mova
+# كوّن
 
-Mova is a product-idea-to-blueprint app that captures a user prompt, supports multi-select integrations, and sends the request to a backend Express API that builds a dynamic system prompt for OpenAI before returning a product blueprint.
+كونis a product-idea-to-blueprint app that captures a user prompt, supports multi-select integrations, and sends the request to a backend Express API that builds dynamic system prompt for GROQ_API before returning a product blueprint.
 
 ## Tech Stack
 
 - Frontend: React + Vite + JavaScript + Tailwind CSS
 - Backend: Node.js + Express + JavaScript
 - AI: OpenAI via the backend only
-- Database: None
 
 ## Project Structure
 
