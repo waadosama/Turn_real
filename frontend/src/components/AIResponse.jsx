@@ -71,7 +71,7 @@ function renderMarkdown(markdown) {
   return html.join('')
 }
 
-export default function AIResponse({ response, isVisible, isLoading }) {
+export default function AIResponse({ response, selectedIntegrations = [], isVisible, isLoading }) {
   if (isLoading) {
     return (
       <div className="mt-10 rounded-2xl border border-teal/15 bg-teal/5 px-5 py-6 text-center">
@@ -131,6 +131,14 @@ export default function AIResponse({ response, isVisible, isLoading }) {
       </div>
 
       <div className="gradient-border overflow-hidden rounded-2xl p-6 sm:p-8">
+        <div className="mb-6 rounded-xl border border-teal/15 bg-teal/5 px-4 py-3">
+          <p className="text-xs font-bold text-teal">التكاملات المختارة</p>
+          <p className="mt-1 text-sm font-semibold text-ink">
+            {selectedIntegrations.length > 0
+              ? selectedIntegrations.join('، ')
+              : 'لم يتم اختيار تكاملات'}
+          </p>
+        </div>
         <div
           className="markdown-body prose prose-sm max-w-none space-y-3 text-sm leading-[1.9] text-ink-soft"
           dangerouslySetInnerHTML={{ __html: renderMarkdown(response) }}

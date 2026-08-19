@@ -165,7 +165,12 @@ function App() {
                 </div>
               )}
 
-              <AIResponse response={response} isVisible={Boolean(response)} isLoading={loading} />
+              <AIResponse
+                response={response}
+                selectedIntegrations={selectedIntegrations}
+                isVisible={Boolean(response)}
+                isLoading={loading}
+              />
             </div>
           </div>
 
