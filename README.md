@@ -1,6 +1,8 @@
 # كوّن
 
 كونis a product-idea-to-blueprint app that captures a user prompt, supports multi-select integrations, and sends the request to a backend Express API that builds dynamic system prompt for GROQ_API before returning a product blueprint.
+See The Full version on presentation
+https://canva.link/pb6l8hhk2cnlarn
 
 ## Tech Stack
 
